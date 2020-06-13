@@ -1,0 +1,277 @@
+/* ================================ CSS Reset  ================================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --main-black-color: #343434;
+}
+
+/**
+* =================================
+* * General
+* =================================
+* */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+/**
+* =================================
+* * Toolbar
+* =================================
+* */
+.toolbar {
+  background-color: var(--main-black-color);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding: 0 20px;
+  color: #fff;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.toolbar > div {
+  flex: 1 1 0;
+}
+
+.toolbar > div > h1,
+p {
+  line-height: 30px;
+}
+
+.brand-title-wrapper h1 {
+  font-size: 22px;
+}
+
+.current-city-wrapper {
+  text-align: center;
+}
+
+.search-city-wrapper {
+  text-align: right;
+}
+
+.search-city-wrapper input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.search-city-wrapper input::placeholder {
+  color: #fff;
+}
+
+.search-city-wrapper button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+/**
+* =================================
+* * Card
+* =================================
+* */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-card {
+  background-color: var(--main-black-color);
+  padding: 15px 20px;
+  border-radius: 30px;
+  flex: 1 1 300px;
+  max-width: 330px;
+  color: #fff;
+  margin: 20px;
+}
+
+.weather-card img {
+  width: 35px;
+}
+.weather-card header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.weather-card header > div:first-child {
+  flex: 3 3 0;
+  line-height: 35px;
+}
+
+.weather-card header > div:first-child > span:first-child {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.weather-card header > div:first-child > span:last-child {
+  font-size: 14px;
+}
+
+.weather-card header > div:last-child {
+  flex: 1 1 0;
+  text-align: right;
+}
+
+.weather-card section > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.weather-card section > div img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.weather-card section > div > span:first-of-type {
+  margin-right: 15px;
+}

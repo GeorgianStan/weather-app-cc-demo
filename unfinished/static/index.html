@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="ISO-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- App title -->
+    <title>Weather App</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/icons/favicon96x96.ico" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/index.css" />
+
+    <!-- lato font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="toolbar">
+      <div class="brand-title-wrapper">
+        <h1>Weather App</h1>
+      </div>
+      <div class="current-city-wrapper">
+        <p id="formatted-location"></p>
+      </div>
+      <div class="search-city-wrapper">
+        <input type="text" placeholder="City" id="location-name-input" />
+        <button id="fetch-data-btn">Fetch data</button>
+      </div>
+    </header>
+
+    <main></main>
+
+    <!-- ? Boilerplate -->
+    <div class="weather-card hidden" id="weather-card-demo">
+      <header>
+        <div>
+          <span>Monday</span>
+          <span>10.05.2020</span>
+        </div>
+        <div>
+          <img src="/assets/images/summary-icons/clear.svg" alt="" />
+        </div>
+      </header>
+
+      <section>
+        <div>
+          <img src="/assets/images/icons/temperature.png" alt="" />
+          <span>Min: 20 m/s</span>
+          <span>Max: 30 m/s</span>
+        </div>
+        <div>
+          <img src="/assets/images/icons/wind-speed-flag.png" alt="" />
+          <span>Min: 20 m/s</span>
+          <span>Max: 30 m/s</span>
+        </div>
+        <div>
+          <img src="/assets/images/icons/humidity.png" alt="" />
+          <span>Min: 20 m/s</span>
+          <span>Max: 30 m/s</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- index.js -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

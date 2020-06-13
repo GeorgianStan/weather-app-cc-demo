@@ -1,0 +1,23 @@
+{
+  "name": "weather-app-cc-demo",
+  "version": "1.0.0",
+  "description": "ClimaCell weather app demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoPablo/weather-app-cc-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeoPablo/weather-app-cc-demo/issues"
+  },
+  "homepage": "https://github.com/GeoPablo/weather-app-cc-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
